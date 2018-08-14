@@ -83,3 +83,22 @@ Some may have issues putting these kexts in the Other folder where the Kexts won
 * Delete *BrcmFirewareData.kext* from **EFI/CLOVER/kexts/Other**
 * Copy *BrcmFirmwareRepo.kext* from **Release** folder to: **/Library/Extensions**
 
+## Enable & Disable System Integrity Protection (SIP) in Clover Boot Loader
+
+https://hackintosher.com/forums/thread/enable-disable-system-integrity-protection-sip-on-a-hackintosh.53/
+
+1. Boot into Clover EFI Menu
+2. Select Options (gear icon) using arrow keys
+3. Select System Parameters
+4. Select System Integrity Protection
+5. Change to enable/disable
+> **Disable SIP** - Check: Allow Untrusted Kexts, Allow Unrestricted FS, Allow Task for PID, Allow Unrestricted Dtrace, Allow Unrestricted NVRAM
+> **Enable SIP** - Uncheck everything
+6. Select Return
+7. Select Return again
+8. Select Return again...
+9. Boot macOS partition
+
+
+
+
