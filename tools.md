@@ -31,3 +31,10 @@ https://sourceforge.net/projects/iojones/
 ## [Flat Package Editor](/tools/Flat_Package_Editor.zip)
 
 Editor for MPKG flat packages.
+
+## [Kext Utility](tools/Kext_Utility.app.v2.6.6.zip)
+
+Tool for adding kext files.
+
+http://cvad-mac.narod.ru/index/0-4
+

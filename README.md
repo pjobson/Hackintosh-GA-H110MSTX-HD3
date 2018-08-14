@@ -3,7 +3,7 @@
 ## Build Specifications
 
 * **Gigabyte GA-H110MSTX-HD3**
-* **Intel i5-7500T Kaby Lake**
+* **Intel i5-7500T Kaby Lake - HD Graphics 630**
 * **SilverStone Technology 120W AD120-STX**
 * **Kingston SSDNow (SMS200S3/240G)**
 * **Patriot Signature Line 2x8GB (PSD38G1333SK)**
@@ -22,6 +22,8 @@
 * UniBeast 8.3.x - High Sierra
 
 > https://www.tonymacx86.com/resources/unibeast-8-3-2-high-sierra.383/
+
+* Other [Useful Tools](/tools.md)
 
 ## BIOS Settings
 
@@ -57,5 +59,27 @@
 * Wake on LAN - **Disable**
 * IOAPIC 24-119 Entries - **Enabled**
 
+## Broadcom BCM94352Z
 
+https://hackintosher.com/forums/thread/enabling-third-party-broadcom-wlan-802-11a-b-g-n-wifi-bluetooth-cards-on-a-hackintosh-bcm94352z-bcm94322.6/
+
+### Steps
+
+1. Mount EFI partition
+2. Download latest [OS-X-Fake-PCI-ID](https://bitbucket.org/RehabMan/os-x-fake-pci-id/downloads/)
+3. Unzip / Open: **./OS-X-Fake-PCI-ID/Release**
+4. Open Release folder
+5. Copy: *FakePCIID.kext* & *FakePCIID_Broadcom_WiFi.kext* to: **EFI/CLOVER/kexts/Other**
+7. Download latest [OS-X-BrcmPatchRAM](https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/)
+8. Unzip / Open: **./OS-X-BrcmPatchRAM/Release**
+9. Copy: *BrcmFirmwareData.kext* / *BrcmPatchRAM2.kext* / *BrcmNonPatchRAM2.kext* to: **EFI/CLOVER/kexts/Other**
+10. Reboot
+
+### Issues
+
+Some may have issues putting these kexts in the Other folder where the Kexts wont always work or maybe Wifi is working, but bluetooth isn't. With Clover some kexts can fail to properly initiate so you can try migrating BrcmPatchRAM to /Library/Extensions:
+
+* Move *BrcmPatchRAM2.kext* & *BrcmNonPatchRAM2.kext* to **/Library/Extensions**
+* Delete *BrcmFirewareData.kext* from **EFI/CLOVER/kexts/Other**
+* Copy *BrcmFirmwareRepo.kext* from **Release** folder to: **/Library/Extensions**
 
