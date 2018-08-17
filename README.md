@@ -9,6 +9,40 @@
 * **Patriot Signature Line 2x8GB (PSD38G1333SK)**
 * **Broadcom BCM94352Z 802.11 AC / Bluetooth 4.0**
 
+## BIOS Update
+
+Update the BIOS to the latest first as of this writing it was F25, the board shipped with F1. https://www.gigabyte.com/Motherboard/GA-H110MSTX-HD3-rev-10#support-dl-bios
+
+### FreeDOS
+
+You'll need a USB stick, size doesn't really matter, it should be bigger than 50 MB.
+
+* Download a FreeDOS USB stick ISO full or lite doesn't really matter. http://www.freedos.org/download/
+* Unzip the file from FreeDOS, you only need the img file: **FD12LITE.img** or **FD12FULL.img**.
+* ~~Unetbootin~~ is loaded up with spyware now, so get yourself a copy of **Etcher**. https://etcher.io/
+* Open Etcher.
+* Click **Select Image** and select the FreeDOS img file.
+* Click **Select Drive** and select your USB stick.
+* Click **Flash** and wait.
+
+## Flashing
+
+**==Do not power off while it is flashing or you'll brick your motherboard.==**
+
+* You should have downloaded **mb_bios_ga-h110mstx-hd3_f25.zip** from Gigabyte.
+* Unzip the file, it should contain three files: `autoexec.bat`, `Efiflash.exe`, `H110MSH3.F25`
+* Create a new folder on your FreeDOS USB stick called BIOS and copy those files into it.
+* Eject and remove the stick from your mac.
+* Insert it into your GA-H110MSTX-HD3 and boot from it.
+* It may ask your language, the goal is to exit the installer and "Return to DOS".
+* Once you're at the `C:\` prompt do:
+
+    cd BIOS
+    Efiflash H110MSH3.F25
+
+Let it complete the flash process and you're done.
+
+
 ## Download
 
 * High Sierra
