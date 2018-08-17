@@ -13,7 +13,7 @@
 
 * High Sierra
 
-> https://itunes.apple.com/us/app/macos-high-sierra/id1246284741?mt=12&l=en-us&ls=1
+> https://itunes.apple.com/us/app/macos-high-sierra/id1246284741
 
 * MultiBeast 10.4.x - High Sierra
 
