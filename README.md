@@ -39,8 +39,8 @@ You'll need a USB stick, size doesn't really matter, it should be bigger than 50
 * It may ask your language, the goal is to exit the installer and "Return to DOS".
 * Once you're at the `C:\` prompt do:
 
-    cd BIOS
-    Efiflash H110MSH3.F25
+    	cd BIOS
+    	Efiflash H110MSH3.F25
 
 Let it complete the flash process and you're done.
 
