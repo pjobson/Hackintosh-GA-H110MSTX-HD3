@@ -9,6 +9,8 @@
 * **Patriot Signature Line 2x8GB (PSD38G1333SK)**
 * **Broadcom BCM94352Z 802.11 AC / Bluetooth 4.0**
 
+![motherboard](supplemental/motherboard-1.jpg  "motherboard")
+
 ## BIOS Update
 
 Update the BIOS to the latest first as of this writing it was F25, the board shipped with F1. https://www.gigabyte.com/Motherboard/GA-H110MSTX-HD3-rev-10#support-dl-bios
